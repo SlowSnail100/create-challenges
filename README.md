@@ -1,2 +1,2 @@
 # create-challenges
-Create Challenges
+Create and develop challenges.
