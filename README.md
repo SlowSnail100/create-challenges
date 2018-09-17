@@ -1,2 +1,2 @@
-# create-challenges
-Create and develop challenges.
+# Create Challenges
+Create and develop challenges in Python.
