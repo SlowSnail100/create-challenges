@@ -26,11 +26,15 @@ def numberplate2(size=7, chars=string.ascii_uppercase.replace("I","") + string.d
 numberplate2()
 
 
+import string
+import random
+
 def numberplate3():
-    totalrange = list(range(2,19))+list(range(51,69))
-    plate1 = ''.join(random.choice(string.ascii_uppercase.replace("I","")) for x in range(2))
-    plate2 = random.choice(totalrange)
-    plate4 = ''.join(random.choice(string.ascii_uppercase.replace("I","")) for x in range(3))
-    print(plate1, plate2, plate4)
+    totalrange = list(range(2,20))+list(range(51,70))
+    totalletters = 'ABCDEFGHJKLMNPRSTUVWXYZ'
+    plate1 = ''.join(random.choice(totalletters) for x in range(2))
+    plate2 = format(random.choice(totalrange),'02')
+    plate4 = ''.join(random.choice(totalletters) for x in range(3))
+    print(plate1+plate2, plate4)
 
 numberplate3()
