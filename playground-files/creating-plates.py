@@ -16,11 +16,11 @@ def numberplate():
     lastletters = ''.join([random.choice(minus_i) for n in range(0,3)])
     print('{}{}{} {}'.format(firstletters, firstnumber, secondnumber, lastletters))
 
-def numberplate2(size=7, chars=string.ascii_uppercase.replace("I","") + string.digits):
+def numberplate1(size=7, chars=string.ascii_uppercase.replace("I","") + string.digits):
     plate = ''.join(random.choice(chars) for x in range(size))
     print(plate)
 
-def numberplate3():
+def numberplate2():
     totalrange = list(range(2,20))+list(range(51,70))
     totalletters = 'ABCDEFGHJKLMNPRSTUVWXYZ'
     plate1 = ''.join(random.choice(totalletters) for x in range(2))
