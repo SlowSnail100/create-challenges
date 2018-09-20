@@ -4,9 +4,9 @@ import json
 import random
 
 def generatenames():
-    regions = ["england","united%20states","canada"]  # choose a region the name is from
+    regions = ["england","united%20states"]  # choose a region the name is from
 
-    for _ in range(5):
+    for _ in xrange(2):
         response = requests.get("http://uinames.com/api/?region={}&amount=500".format(random.choice(regions))) # send a get request to name api, amount max is 500
         jdata = json.loads(response.content) # load in the json response
 
