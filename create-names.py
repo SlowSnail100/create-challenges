@@ -9,7 +9,6 @@ def generatenames():
     for _ in xrange(2):
         response = requests.get("http://uinames.com/api/?region={}&amount=500".format(random.choice(regions))) # send a get request to name api, amount max is 500
         jdata = json.loads(response.content) # load in the json response
-
         for i in jdata:
             print("{first} {surname}".format(first=i['name'],surname=i['surname'])) # print the generated name - this will eventually write to a db
 
